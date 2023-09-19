@@ -1,0 +1,258 @@
+.nav-image {
+    height: 135px;
+    width: 135px;
+    margin-left: 100px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    /* align items in a line */
+    justify-content: space-between;
+    /* place elements one on left and one on right */
+    align-items: center;
+    /* to align items center */
+    width: 90%;
+}
+
+.listItem {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.lists {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.lists:hover {
+    color: red;
+}
+
+.secondName {
+    color: orange;
+}
+
+.title {
+    margin-top: 13%;
+    margin-left: 8%;
+}
+
+.title-h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.download {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.images {
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+
+.images img {
+    position: absolute;
+    height: 100%;
+    left: 58%;
+    bottom: 0px;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover #shape {
+    bottom: 20%;
+}
+
+.images:hover #girl {
+    left: 20%;
+}
+
+#about {
+    margin: 18% 8% 0px 8%;
+}
+
+.aboutHeading {
+    text-align: center;
+}
+
+.abouth2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.intro {
+    font-size: 20px;
+    color: green;
+    font-weight: 400;
+}
+
+.aboutImg img {
+    width: 45%;
+}
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.aboutDetails {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.information {
+    margin-top: 20pxs;
+}
+
+.eachInfo {
+    margin-top: 15px;
+}
+.infoSpan {
+    margin-left: 15px;
+}
+
+.skillHeading {
+    text-align: center;
+}
+
+#skills {
+    margin: 7% 8% 0px 8%;
+}
+
+.skillContiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.progress-bar {
+    margin-left: 70px;
+    padding-left: 40px;
+    margin-top: 100px;
+}
+
+.bar-container {
+    display: flex;
+    /* to align items in a line */
+    justify-content: space-between;
+    /* to place item one on left and one on right */
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.base-bar {
+    background-color: #000;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.orange-bar {
+    background-color: orange;
+    width: 95%;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.skill-image {
+    margin-left: 50px;
+}
+.contactHeading{
+    margin-top: 50px;
+    text-align: center;
+}
+.iconSet {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    align-items: center;
+}
+.eachIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eachIcon i{
+    font-size: 30px;
+    color: black;
+}
+/* .icon-style{
+    font-size: 30px;
+    margin-left: 20px; 
+}*/
+/* .icon-style:hover{
+    color: red;
+} */
+.bottomFooter{
+    margin-top: 100px;
+    text-align: center;
+}
+.eachIcon:hover{
+    background-image: linear-gradient(to bottom right, yellow,red);
+}
+.eachIcon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+}
+.upArrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    background-image: linear-gradient(to bottom right,yellow,red);
+    margin: 0px 10px 50px 0px;
+}
+.upArrow i{
+    margin-left: 12px;
+    margin-top: 10px;
+}
+.upArrow:hover{
+    animation: shake 0.75s;
+}
